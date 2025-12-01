@@ -2,112 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Student Registration Form</title>
+    <title>Welcome Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f4f8;
+            margin: 0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            background-color: #f0f4ff;
+            font-family: Arial, sans-serif;
         }
 
-        .form-container {
-            background-color: #ffffff;
-            padding: 25px 30px;
-            width: 400px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        h2 {
+        .welcome-box {
             text-align: center;
-            margin-bottom: 20px;
-            color: #333;
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        label {
-            display: block;
-            margin-top: 10px;
-            font-weight: bold;
+        h1 {
+            color: #4a4aff;
+            margin-bottom: 10px;
+        }
+
+        p {
             color: #555;
-        }
-
-        input, select, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-
-        textarea {
-            resize: none;
-        }
-
-        .gender {
-            margin-top: 5px;
-        }
-
-        .gender input {
-            width: auto;
-            margin-right: 5px;
-        }
-
-        button {
-            width: 100%;
-            margin-top: 20px;
-            padding: 10px;
-            border: none;
-            background-color: #4CAF50;
-            color: white;
             font-size: 16px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
         }
     </style>
 </head>
 <body>
 
-<div class="form-container">
-    <h2>Student Form</h2>
-
-    <form>
-        <label for="name">Student Name</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-
-        <label for="dob">Date of Birth</label>
-        <input type="date" id="dob" name="dob">
-
-        <label>Gender</label>
-        <div class="gender">
-            <input type="radio" name="gender" value="male"> Male
-            <input type="radio" name="gender" value="female"> Female
-        </div>
-
-        <label for="course">Course</label>
-        <select id="course" name="course">
-            <option value="">Select Course</option>
-            <option value="AWS">AWS</option>
-            <option value="AZURE">AZURE</option>
-            <option value="GCP">GCP</option>
-            <option value="DEVOPS with CLOUD">DEVOPS with CLOUD</option>
-        </select>
-
-        <label for="address">Address</label>
-        <textarea id="address" name="address" rows="3"></textarea>
-
-        <button type="submit">Submit</button>
-    </form>
+<div class="welcome-box">
+    <h1>Welcome!</h1>
+    <p>We are happy to see you here.</p>
 </div>
 
 </body>
